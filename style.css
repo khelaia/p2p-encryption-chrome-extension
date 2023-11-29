@@ -1,0 +1,62 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    width: 200px;
+    height: 300px;
+}
+
+.row{
+    display: flex;
+}
+
+.form label{
+    display: grid;
+}
+:where(.form) textarea, input{
+    width: 200px;
+
+}
+.form textarea{
+    resize: none;
+    max-height: 150px;
+    min-height: 80px;
+}
+
+.btn-group {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+.btn-group button{
+    cursor: pointer;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    outline: none;
+    padding: 0.15rem 0;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    z-index: 1;
+}
+.btn-group button:first-child{
+    color: #fff;
+    background-color: #2196f3;
+    border: 1px solid #2196f3;
+}
+.btn-group button:last-child{
+    background-color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+    color: #333;
+}

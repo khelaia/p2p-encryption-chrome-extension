@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>P2P Encryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="form">
+        <div class="row">
+            <label>
+                <span>Encryption Key</span>
+                <input id="key" type="password" placeholder="Key">
+            </label>
+        </div>
+        <div class="row">
+            <label>
+                <span>Encrypt/Decrypt Text</span>
+                <textarea id="data" placeholder="Encrypt/Decrypt Text"></textarea>
+            </label>
+        </div>
+        <div class="row">
+            <label>
+                <span>Result</span>
+                <textarea id="result" readonly="readonly" placeholder="Result"></textarea>
+            </label>
+        </div>
+        <div class="btn-group">
+            <button id="encrypt">Encrypt</button>
+            <button id="decrypt">Decrypt</button>
+        </div>
+    </div>
+</div>
+<script src="aes.js"></script>
+<script src="sha256.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
